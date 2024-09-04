@@ -111,7 +111,7 @@ const CheckoutPage = () => {
         totalPrice: totalPrice,
       };
       const postOrder = async () => {
-        const url = "http://localhost:5000/api/shop/order";
+        const url = `${process.env.REACT_APP_API_URL}/api/shop/order`;
         try {
           const response = await fetch(url, {
             method: "POST",

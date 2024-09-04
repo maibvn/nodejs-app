@@ -127,6 +127,7 @@ exports.postAddProduct = async (req, res, next) => {
       img5,
     } = req.body;
     // Validate required fields
+    console.log(count);
     if (
       !name ||
       !price ||
@@ -143,6 +144,7 @@ exports.postAddProduct = async (req, res, next) => {
     const newProduct = new Product({
       name,
       price,
+      count,
       category,
       short_desc,
       long_desc,

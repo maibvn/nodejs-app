@@ -28,7 +28,7 @@ const LiveChat = ({ isOpen }) => {
 
   useEffect(() => {
     // Initialize socket connection
-    socketRef.current = io.connect("http://localhost:5000");
+    socketRef.current = io.connect(`${process.env.REACT_APP_API_URL}`);
     // Register roomId
     const data = { roomId: roomId, from: "client" };
     socketRef.current.emit("register", data);
@@ -50,7 +50,7 @@ const LiveChat = ({ isOpen }) => {
     const getMessages = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/message/${roomId}`,
+          `${process.env.REACT_APP_API_URL}/api/message/${roomId}`,
           {
             method: "GET",
             credentials: "include", // Ensure cookies are sent with the request

@@ -28,9 +28,8 @@ app.use(
   session({
     secret: "secret_key",
     resave: false,
-    // saveUninitialized: false,
-    saveUninitialized: true,
-    secure: true,
+    saveUninitialized: false,
+    // secure: true,
     store: MongoStore.create({
       mongoUrl: MONGODB_URL,
       collectionName: "sessions",

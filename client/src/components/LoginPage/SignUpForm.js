@@ -50,7 +50,7 @@ function SignUpForm() {
 
     if (valid && !accIsExist) {
       const postSignUp = async () => {
-        const url = "http://localhost:5000/api/auth/signup";
+        const url = `${process.env.REACT_APP_API_URL}/api/auth/signup`;
         try {
           const response = await fetch(url, {
             method: "POST",

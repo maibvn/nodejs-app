@@ -10,7 +10,7 @@ const OrderDetailPage = () => {
 
   useEffect(() => {
     const getOrderDetail = async () => {
-      const url = `http://localhost:5000/api/shop/order/${orderId}`;
+      const url = `${process.env.REACT_APP_API_URL}/api/shop/order/${orderId}`;
       try {
         const response = await fetch(url, {
           method: "GET",

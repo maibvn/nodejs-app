@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const ErrorPage = () => {
   const navigate = useNavigate();
   const logOutHandler = async () => {
-    const url = "http://localhost:5000/api/auth/logout";
+    const url = `${process.env.REACT_APP_API_URL}/api/auth/logout`;
     try {
       const response = await fetch(url, {
         method: "GET",

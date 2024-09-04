@@ -1,7 +1,7 @@
 import { generateImgLinks } from "./generateImgLink";
 
 export const fetchData = async () => {
-  const url = "http://localhost:5000/api/shop/";
+  const url = `${process.env.REACT_APP_API_URL}/api/shop/`;
   const response = await fetch(url);
 
   if (!response.ok) {

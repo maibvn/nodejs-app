@@ -17,7 +17,7 @@ const NavBar = ({ currentUser, onLogout }) => {
     getLogout();
   };
   const getLogout = async () => {
-    const url = "http://localhost:5000/api/auth/logout";
+    const url = `${process.env.REACT_APP_API_URL}/api/auth/logout`;
     try {
       const response = await fetch(url, {
         method: "GET",

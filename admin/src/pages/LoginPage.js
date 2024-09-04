@@ -49,7 +49,7 @@ function Login() {
     setIsTouched(true);
 
     const postLogin = async () => {
-      const url = "http://localhost:5000/api/auth/login";
+      const url = `${process.env.REACT_APP_API_URL}/api/auth/login`;
       try {
         const response = await fetch(url, {
           method: "POST",

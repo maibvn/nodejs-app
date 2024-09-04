@@ -26,7 +26,7 @@ const Chatbox = () => {
   }, []);
 
   useEffect(() => {
-    socketRef.current = io.connect("http://localhost:5000"); // Update with your server URL
+    socketRef.current = io.connect(`${process.env.REACT_APP_API_URL}`); // Update with your server URL
 
     socketRef.current.on("messageUpdate", (roomId) => {
       //Update new roomIDs if the user is new
@@ -64,7 +64,7 @@ const Chatbox = () => {
       try {
         setIsLoading(true);
         const response = await fetch(
-          `http://localhost:5000/api/message/${selectedRoom}`,
+          `${process.env.REACT_APP_API_URL}/api/message/${selectedRoom}`,
           {
             method: "GET",
             credentials: "include", // Ensure cookies are sent with the request
@@ -108,7 +108,18 @@ const Chatbox = () => {
       handleSendMessage();
     }
   };
-
+  let img = (
+    <img
+      src="https://www.pngall.com/wp-content/uploads/5/Profile-Transparent.png"
+      alt="consultor-img"
+      style={{
+        width: "40px",
+        height: "40px",
+        // margin: "auto",
+        // display: "block",
+      }}
+    />
+  );
   return (
     <div className={styles.chatboxContainer}>
       <h4>Chat</h4>
@@ -129,17 +140,26 @@ const Chatbox = () => {
               roomIds
                 .filter((roomId) => roomId.includes(search))
                 .map((roomId) => (
-                  <li
+                  <div
                     style={{
-                      backgroundColor:
-                        roomId === selectedRoom ? "#D3D3D3" : "white",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "4px",
                     }}
-                    key={roomId}
-                    onClick={() => handleUserClick(roomId)}
-                    className={styles.userItem}
                   >
-                    {roomId}
-                  </li>
+                    {img}
+                    <li
+                      style={{
+                        backgroundColor:
+                          roomId === selectedRoom ? "#D3D3D3" : "white",
+                      }}
+                      key={roomId}
+                      onClick={() => handleUserClick(roomId)}
+                      className={styles.userItem}
+                    >
+                      {roomId}
+                    </li>
+                  </div>
                 ))}
           </ul>
         </div>
@@ -175,13 +195,16 @@ const Chatbox = () => {
                   <div
                     key={index}
                     style={{
+                      display: msg.from === "client" ? "flex" : "block",
+                      gap: "4px",
                       overflowX: "hidden",
                       textAlign: msg.from === "admin" ? "right" : "left",
                       marginLeft: msg.from === "admin" ? "auto" : "0",
                       margin: "5px",
-                      borderRadius: "10px",
                     }}
                   >
+                    {msg.from === "client" && img}
+
                     <div
                       style={{
                         maxWidth: "60%",

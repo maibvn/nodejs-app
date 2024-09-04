@@ -60,7 +60,7 @@ const UpdateProduct = ({
     const handleUpdate = async () => {
       try {
         await axios.put(
-          `http://localhost:5000/api/admin/product/edit/${productId}`,
+          `${process.env.REACT_APP_API_URL}/api/admin/product/edit/${productId}`,
           formData,
           { withCredentials: true }
         );
@@ -75,7 +75,7 @@ const UpdateProduct = ({
     const handleUploadImg = async () => {
       try {
         const response = await axios.post(
-          `http://localhost:5000/api/admin/upload`,
+          `${process.env.REACT_APP_API_URL}/api/admin/upload`,
           imageData,
           { withCredentials: true }
         );
@@ -92,7 +92,7 @@ const UpdateProduct = ({
       });
       try {
         const response = await axios.post(
-          `http://localhost:5000/api/admin/add-product`,
+          `${process.env.REACT_APP_API_URL}/api/admin/add-product`,
           formData,
           { withCredentials: true }
         );
@@ -113,7 +113,6 @@ const UpdateProduct = ({
       formData.append("count", Number(countRef.current.value));
       formData.append("price", Number(priceRef.current.value));
       formData.append("category", categoryRef.current.value);
-
       await handleUpdate();
     } else if (method === "add") {
       formData.append("name", nameRef.current.value);

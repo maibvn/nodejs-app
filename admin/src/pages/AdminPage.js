@@ -19,7 +19,7 @@ const AdminPage = () => {
     const getProducts = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/admin/products",
+          `${process.env.REACT_APP_API_URL}/api/admin/products`,
           {
             withCredentials: true, // Ensure cookies are sent with the request
           }
