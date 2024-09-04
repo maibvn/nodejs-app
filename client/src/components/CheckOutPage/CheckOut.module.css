@@ -1,0 +1,45 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52px;
+  background-color: #f8f9fa;
+  margin-bottom: 32px;
+}
+.subBanner {
+  display: flex;
+}
+.billingContainer {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+.order {
+  padding: 48px;
+  margin-left: 32px;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  height: fit-content;
+}
+/* BILLING */
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  text-transform: uppercase;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+}
+.container {
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

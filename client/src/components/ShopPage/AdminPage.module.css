@@ -1,0 +1,79 @@
+/* .adminContainer {
+  display: inline-block;
+  font-style: normal;
+  color: rgb(98, 97, 97);
+  padding: 7px;
+  width: 100%;
+}
+.adminContainer h4 {
+  color: black;
+}
+.adminContainer table {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.adminContainer table,
+.adminContainer th,
+.adminContainer td {
+  border: 0.1px solid #d2d0d0; 
+}
+
+.adminContainer th {
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1.1rem;
+  border: none;
+}
+.adminContainer img {
+  width: 70px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.adminContainer {
+  margin-bottom: 3rem;
+}
+.adminContainer h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.adminContainer p {
+  color: #919191;
+  margin: 0;
+}
+.adminContainer tr:nth-child(odd) {
+  background-color: #f2f2f2; 
+}
+.adminContainer input {
+  width: 20rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d2d0d0;
+}
+.adminContainer img {
+  width: 60px;
+  height: auto;
+}
+.adminUpdateBtn,
+.adminDeleteBtn {
+  color: white;
+  font-style: normal;
+}
+.adminUpdateBtn {
+  background-color: #22ca80;
+  margin-right: 0.5rem;
+}
+.adminDeleteBtn {
+  background-color: #ff4f70;
+}
+
+.adminUpdateBtn:hover {
+  background-color: #07b54a;
+}
+
+.adminDeleteBtn:hover {
+  background-color: #e22044;
+} */

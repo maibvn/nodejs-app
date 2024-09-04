@@ -1,0 +1,116 @@
+.livechatContainer {
+  position: fixed;
+  bottom: 150px;
+  right: 100px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  animation: leanAndGetBigger 0.5s ease-in-out;
+}
+.liveChat {
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  width: 400px;
+  height: 400px;
+  padding: 12px;
+}
+.textBackground {
+  position: relative;
+  display: inline-block;
+  color: white;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+}
+
+.textBackground::after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2fa3f0;
+  z-index: -1;
+}
+
+.repTextBackground {
+  position: relative;
+  display: inline-block;
+  color: rgb(18, 17, 17);
+  padding: 5px 10px;
+  margin-bottom: 8px;
+}
+
+.repTextBackground::after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(197, 197, 200);
+  z-index: -1;
+}
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.livechatContainer p {
+  background-color: #ccc;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.messageContainer {
+  padding: 10px;
+  /* height: 250px; */
+  overflow-y: auto;
+  text-align: right;
+}
+.replyContainer {
+  padding: 10px;
+  /* height: 250px; */
+  overflow-y: auto;
+  text-align: left;
+}
+.livechatContainer input {
+  width: 100%;
+  height: auto;
+  border: none;
+  padding: 8px;
+}
+.icon {
+  cursor: pointer;
+  color: #ccc;
+  margin-left: 8px;
+}
+input:focus {
+  outline: none;
+  border: none;
+}
+
+.supporterImg {
+  width: 50px;
+  height: "auto";
+  border-radius: "50%";
+  padding-right: 8px;
+}
+/*  */
+@keyframes leanAndGetBigger {
+  0% {
+    transform: scale(0.9) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(-8deg);
+  }
+  700% {
+    transform: scale(1) rotate(-4deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}

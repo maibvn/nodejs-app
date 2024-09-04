@@ -1,0 +1,48 @@
+/* INFORMATION */
+
+.info .text {
+  /* color: var(--second-color); */
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.info .des {
+  color: var(--second-color);
+}
+.infoContainer {
+  background-color: #f8f9fa;
+  padding: 52px;
+  margin: unset;
+  max-width: 100%;
+  padding-left: 10vw;
+  margin-top: 52px;
+  margin-bottom: 52px;
+}
+.contactText {
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.contact {
+  margin: 0;
+  padding: 0;
+  margin-top: 52px;
+  margin-bottom: 52px;
+  max-width: 100%;
+  gap: 32px;
+  /* justify-items: center; */
+}
+.contact button {
+  height: 100%;
+  display: inline-block;
+  font-style: normal;
+}
+.inputContainer input {
+  width: 100%;
+  border-radius: 2px;
+  height: 100%;
+  padding: 12px;
+}
+.contact .inputContainer {
+  height: 100%;
+}

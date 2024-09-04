@@ -1,0 +1,47 @@
+.navbar ul {
+  list-style: none;
+  font-style: italic;
+  display: flex;
+  padding: 0;
+}
+
+.navbar ul li {
+  text-decoration: none;
+}
+.isActive {
+  color: orange;
+}
+.isNotActive {
+  color: black;
+}
+
+.brand {
+  margin: auto;
+  text-align: center;
+  font-weight: 450;
+  font-size: 110%;
+}
+.icon {
+  color: var(--second-color);
+  margin-right: 6px;
+  margin-left: 10px;
+}
+
+a {
+  color: black;
+  /* padding-right: 12px; */
+}
+svg {
+  display: inline-block;
+}
+span {
+  /* display: block; */
+}
+.logout {
+  cursor: "pointer";
+  text-decoration: none;
+  color: black;
+}
+.logout:hover {
+  color: red;
+}

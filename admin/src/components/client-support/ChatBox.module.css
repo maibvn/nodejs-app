@@ -1,0 +1,108 @@
+.chatboxContainer {
+  font-style: normal;
+  background-color: #f9fbfd;
+  padding: 0.3rem 1.5rem;
+  height: 100vh;
+}
+.chatboxContainer h4 {
+  color: black;
+  margin-bottom: 0.8rem;
+}
+.chatboxContainer .links {
+  color: rgb(87, 86, 86);
+  cursor: pointer;
+  font-size: smaller;
+  margin-bottom: 0.8rem;
+}
+span:hover {
+  color: blue;
+}
+.chatbox {
+  border: 1px solid #e9e7e7; /* Light border */
+  box-shadow: 0 4px 8px rgba(108, 107, 107, 0.1); /* Subtle box-shadow */
+  padding: 0.8rem;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  height: 85vh;
+  font-style: normal;
+}
+
+.sidebar {
+  width: 20%;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.searchInput {
+  flex-shrink: 0;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.userList {
+  list-style: none;
+  padding: 0;
+}
+
+.userItem {
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.userItem:hover {
+  background-color: #f0f0f0;
+}
+
+.conversation {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  padding: 5px;
+}
+
+.messageInput {
+  display: flex;
+}
+
+.input {
+  margin-right: 1rem;
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #7a7979;
+}
+
+.sendButton {
+  padding: 8px;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background-color: #007bff;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background-color: #0056b3;
+}
+
+.icon {
+  cursor: pointer;
+  /* color: #ccc; */
+  /* margin-left: 8px; */
+}

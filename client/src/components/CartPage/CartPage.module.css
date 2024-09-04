@@ -1,0 +1,126 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52px;
+  background-color: #f8f9fa;
+  margin-bottom: 32px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+/* .cartContainer  */
+.cart h3 {
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.cart h4 {
+  text-transform: uppercase;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  font-size: larger;
+}
+.cartTable th,
+.cartTable td {
+  border: none;
+  padding: 12px;
+  text-align: center;
+}
+
+.cartTable th {
+  background-color: var(--bg-color);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.cartTable img {
+  max-width: 70px;
+}
+
+/* Set width for the second column */
+.cartTable td:nth-child(2) {
+  width: 200px; /* Adjust the width as needed */
+  font-weight: 500;
+}
+.cartTable td:nth-child(3),
+.cartTable td:nth-child(5) {
+  color: var(--second-color);
+}
+.cartTable td:nth-child(5) {
+  width: 150px;
+}
+
+.cartTable input[type="number"] {
+  width: 50px;
+}
+
+.cart .icon {
+  color: var(--second-color);
+  cursor: pointer;
+}
+.quantityChange .icon {
+  color: black;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.cartTotal {
+  padding: 48px;
+  margin-left: 32px;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+}
+.totalFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.price {
+  color: var(--second-color);
+  font-weight: 400;
+}
+.toTal {
+  color: black;
+}
+.cart input {
+  width: 100%;
+  height: auto;
+  margin-top: 18px;
+  padding: 12px;
+}
+.cart button {
+  font-style: normal;
+  color: white;
+  width: 100%;
+}
+.giftIcon {
+  color: white;
+  margin-right: 8px;
+}
+/* CART NAVIGATION */
+.cartNavi {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #413f3f;
+  background-color: var(--bg-color);
+  padding: 22px;
+}
+.cartNavi button {
+  color: #413f3f;
+  padding: 12px;
+  background-color: unset;
+  width: max-content;
+  font-style: italic;
+  border: 1px solid black;
+}
+.cartNavi button:hover {
+  background-color: rgb(214, 212, 212);
+}

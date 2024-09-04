@@ -1,0 +1,68 @@
+.dashboard {
+  background-color: #f9fbfd;
+  font-style: normal;
+  padding: 0.3rem 1.5rem;
+  height: 100vh;
+  /* padding: 20px; */
+}
+
+.boxContainer {
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+}
+
+.box {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border: 1px solid #ddd;
+}
+
+.orderContainer table {
+  color: #3e3e3e;
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.orderContainer table,
+.orderContainer th,
+.orderContainer td {
+  border: 0.1px solid #d2d0d0;
+}
+
+.orderContainer th {
+  background-color: white;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  padding: 1.1rem;
+  border: none;
+}
+.orderContainer tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.viewBtn {
+  color: white;
+  background-color: #22ca80;
+}
+
+.viewBtn:hover {
+  background-color: #07b54a;
+}
+.formattedEarnings {
+  display: inline-block;
+  font-size: 24px; /* Adjust size as needed */
+  position: relative;
+}
+.currency {
+  position: absolute;
+  top: -0.5em; /* Adjust to position the currency symbol vertically */
+  right: -0.3em; /* Adjust to position the currency symbol horizontally */
+  font-size: 0.6em;
+  color: black;
+}
